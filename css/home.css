@@ -25,9 +25,11 @@ position:relative;
 }
 
 .logo{
-height:200px;        /* much larger logo */
+height:180px;
 position:absolute;
 left:40px;
+top:50%;
+transform:translateY(-50%);
 }
 
 .brand{
@@ -43,7 +45,7 @@ color:#c65a24;
 
 .hero{
 text-align:center;
-padding:40px 20px 30px;
+padding:24px 20px 14px;
 
 background-image:
 linear-gradient(rgba(30,30,30,.92), rgba(30,30,30,.92)),
@@ -51,12 +53,12 @@ url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
 
 .hero h1{
-font-size:54px;
+font-size:46px;
 margin-bottom:16px;
 }
 
 .hero p{
-font-size:24px;
+font-size:21px;
 color:#cfcfcf;
 }
 
