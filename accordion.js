@@ -1,23 +1,25 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 const headers = document.querySelectorAll(".accordion-header");
 
 headers.forEach(header => {
 
-header.addEventListener("click", () => {
+header.addEventListener("click", function () {
 
-const content = header.nextElementSibling;
+const content = this.nextElementSibling;
 
 document.querySelectorAll(".accordion-content").forEach(item => {
+
 if(item !== content){
 item.style.display = "none";
 }
+
 });
 
-if(content.style.display === "block"){
-content.style.display = "none";
-}
-else{
-content.style.display = "block";
-}
+content.style.display =
+content.style.display === "block" ? "none" : "block";
+
+});
 
 });
 

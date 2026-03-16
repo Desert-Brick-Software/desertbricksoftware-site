@@ -6,6 +6,9 @@ color:#e6e6e6;
 }
 
 
+
+/* HEADER */
+
 .header{
 background:#0f0f0f;
 border-bottom:3px solid #ff7a2f;
@@ -14,35 +17,37 @@ border-bottom:3px solid #ff7a2f;
 .header-inner{
 display:flex;
 align-items:center;
-padding:20px 40px;
+padding:40px 60px;
 }
 
 .logo{
-height:80px;
-margin-right:20px;
+height:140px;
+margin-right:30px;
 }
 
 .brand{
-font-size:28px;
-font-weight:600;
-letter-spacing:1px;
+font-size:52px;
+font-weight:700;
+letter-spacing:2px;
 color:#ff7a2f;
 }
 
 
 
+/* HERO */
+
 .hero{
 text-align:center;
-padding:90px 20px 70px;
+padding:60px 20px 50px;
 }
 
 .hero h1{
-font-size:56px;
+font-size:48px;
 margin-bottom:18px;
 }
 
 .hero p{
-font-size:22px;
+font-size:20px;
 color:#bdbdbd;
 }
 
@@ -52,6 +57,8 @@ color:#ff7a2f;
 
 
 
+/* DIVIDER */
+
 .divider{
 height:2px;
 background:#ff7a2f;
@@ -60,6 +67,8 @@ margin:0 auto 40px auto;
 }
 
 
+
+/* PRODUCTS */
 
 .products{
 max-width:1000px;
@@ -75,6 +84,8 @@ margin-bottom:30px;
 
 
 
+/* ACCORDION */
+
 .accordion-item{
 border-top:2px solid #ff7a2f;
 }
@@ -82,7 +93,6 @@ border-top:2px solid #ff7a2f;
 .accordion-item:last-child{
 border-bottom:2px solid #ff7a2f;
 }
-
 
 .accordion-header{
 width:100%;
@@ -96,13 +106,15 @@ cursor:pointer;
 font-weight:600;
 }
 
-
 .accordion-content{
 display:none;
 padding:0 20px 20px 20px;
 color:#d0d0d0;
 }
 
+
+
+/* BUTTONS */
 
 .product-buttons{
 margin-top:20px;
@@ -111,7 +123,6 @@ flex-direction:column;
 gap:10px;
 max-width:300px;
 }
-
 
 .btn{
 text-decoration:none;
@@ -139,6 +150,8 @@ background:#ff8f4d;
 }
 
 
+
+/* FOOTER */
 
 .footer{
 text-align:center;
