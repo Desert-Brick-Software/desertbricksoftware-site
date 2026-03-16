@@ -1,26 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.querySelectorAll(".accordion-header").forEach(header => {
 
-const headers = document.querySelectorAll(".accordion-header");
+header.addEventListener("click", () => {
 
-headers.forEach(header => {
+const item = header.parentElement
+const content = item.querySelector(".accordion-content")
+const chevron = item.querySelector(".chevron")
 
-header.addEventListener("click", function () {
+document.querySelectorAll(".accordion-content").forEach(section => {
 
-const content = this.nextElementSibling;
-
-document.querySelectorAll(".accordion-content").forEach(item => {
-
-if(item !== content){
-item.style.display = "none";
+if(section !== content){
+section.style.maxHeight = null
+section.previousElementSibling.querySelector(".chevron").style.transform = "rotate(0deg)"
 }
 
-});
+})
 
-content.style.display =
-content.style.display === "block" ? "none" : "block";
+if(content.style.maxHeight){
+content.style.maxHeight = null
+chevron.style.transform = "rotate(0deg)"
+}
+else{
+content.style.maxHeight = content.scrollHeight + "px"
+chevron.style.transform = "rotate(90deg)"
+}
 
-});
+})
 
-});
-
-});
+})
