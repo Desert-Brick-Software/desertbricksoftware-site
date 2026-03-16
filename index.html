@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Desert Brick Software</title>
+
 <link rel="stylesheet" href="/css/home.css">
+
 </head>
 
 <body>
@@ -13,7 +15,7 @@
 
 <div class="header-inner">
 
-<img src="/assets/logo.png" alt="Desert Brick Software Logo" class="logo">
+<img src="/assets/logo.png" class="logo">
 
 <div class="brand">
 Desert Brick Software
@@ -24,9 +26,12 @@ Desert Brick Software
 </header>
 
 
+
 <section class="hero">
 
-<h1>Software built brick by brick.</h1>
+<h1>
+Software built <span class="brick">brick by brick</span>
+</h1>
 
 <p>
 Software tools designed to solve real everyday problems.
@@ -36,17 +41,25 @@ Software tools designed to solve real everyday problems.
 
 
 
+<div class="divider"></div>
+
+
+
 <section class="products">
 
 <h2>Products</h2>
 
 
-<div class="product-grid">
+<div class="accordion">
 
 
-<div class="product-card">
+<div class="accordion-item">
 
-<h3>Remind Me</h3>
+<button class="accordion-header">
+Remind Me
+</button>
+
+<div class="accordion-content">
 
 <p>
 Location-based reminders that trigger when you arrive somewhere.
@@ -72,15 +85,23 @@ Terms
 
 </div>
 
+</div>
 
 
-<div class="product-card coming">
 
-<h3>More Products Coming</h3>
+<div class="accordion-item">
+
+<button class="accordion-header">
+More Products Coming
+</button>
+
+<div class="accordion-content">
 
 <p>
 Additional tools currently under construction.
 </p>
+
+</div>
 
 </div>
 
@@ -98,6 +119,10 @@ Additional tools currently under construction.
 </p>
 
 </footer>
+
+
+
+<script src="/accordion.js"></script>
 
 </body>
 </html>
