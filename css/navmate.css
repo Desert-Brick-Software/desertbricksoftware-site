@@ -1,0 +1,231 @@
+/* NAVMATE HERO */
+
+.navmate-hero {
+  text-align: center;
+  padding: 40px 20px 30px;
+  max-width: 720px;
+  margin: 0 auto;
+  background-image:
+    linear-gradient(rgba(30, 30, 30, .92), rgba(30, 30, 30, .92)),
+    url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+.navmate-hero h1 {
+  font-size: 52px;
+  margin: 0 0 12px;
+  color: #c65a24;
+}
+
+.navmate-hero .subtitle {
+  font-size: 26px;
+  color: #e6e6e6;
+  margin: 0 0 24px;
+}
+
+.navmate-hero p {
+  font-size: 18px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+
+
+/* SECTIONS */
+
+.navmate-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px 50px;
+}
+
+.navmate-section h2 {
+  font-size: 28px;
+  color: #c65a24;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.navmate-section p {
+  font-size: 17px;
+  color: #d0d0d0;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+
+
+/* WAITLIST */
+
+.waitlist-card {
+  border: 2px solid #c65a24;
+  border-radius: 8px;
+  padding: 28px 24px;
+  background: #252525;
+}
+
+.waitlist-card h2 {
+  margin-bottom: 24px;
+}
+
+.waitlist-field {
+  margin-bottom: 18px;
+}
+
+.waitlist-field label {
+  display: block;
+  font-size: 15px;
+  color: #e6e6e6;
+  margin-bottom: 6px;
+}
+
+.label-optional {
+  color: #888;
+}
+
+.waitlist-field input[type="text"],
+.waitlist-field input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: #e6e6e6;
+}
+
+.waitlist-field input:focus {
+  outline: none;
+  border-color: #c65a24;
+}
+
+.waitlist-radios legend {
+  font-size: 15px;
+  color: #e6e6e6;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.waitlist-radios {
+  border: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #d0d0d0;
+  cursor: pointer;
+}
+
+.radio-option input {
+  accent-color: #c65a24;
+}
+
+.waitlist-submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background: #c65a24;
+  color: #111;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.waitlist-note {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 12px;
+}
+
+
+
+/* WHY */
+
+.why-content {
+  text-align: center;
+}
+
+
+
+/* FEATURES */
+
+.features {
+  padding-top: 10px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.feature-card {
+  border: 2px solid #c65a24;
+  border-radius: 8px;
+  padding: 24px 20px;
+  background: #252525;
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: #c65a24;
+  margin: 0 0 12px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #d0d0d0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+/* MOBILE */
+
+@media (min-width: 600px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo {
+    height: 80px;
+    position: static;
+    transform: none;
+  }
+
+  .brand {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .navmate-hero h1 {
+    font-size: 38px;
+  }
+
+  .navmate-hero .subtitle {
+    font-size: 20px;
+  }
+}
