@@ -61,48 +61,54 @@ NavMate is being built to make navigation simpler, clearer, and easier to follow
 
 <h2>Join the Waitlist</h2>
 
+<form action="https://formspree.io/f/xeewryok" method="POST">
+
+<input type="hidden" name="_subject" value="New NavMate waitlist signup">
+
 <div class="waitlist-field">
 <label for="email">Email Address</label>
-<input type="email" id="email" name="email" placeholder="you@example.com">
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
 </div>
 
 <div class="waitlist-field">
 <label for="first-name">First Name <span class="label-optional">(Optional)</span></label>
-<input type="text" id="first-name" name="first-name" placeholder="First name">
+<input type="text" id="first-name" name="first_name" placeholder="First name">
 </div>
 
 <fieldset class="waitlist-radios">
 <legend>Who would use NavMate?</legend>
 
 <label class="radio-option">
-<input type="radio" name="audience" value="me">
+<input type="radio" name="user_type" value="Me">
 Me
 </label>
 
 <label class="radio-option">
-<input type="radio" name="audience" value="parent">
+<input type="radio" name="user_type" value="Parent">
 Parent
 </label>
 
 <label class="radio-option">
-<input type="radio" name="audience" value="grandparent">
+<input type="radio" name="user_type" value="Grandparent">
 Grandparent
 </label>
 
 <label class="radio-option">
-<input type="radio" name="audience" value="other">
+<input type="radio" name="user_type" value="Other">
 Other
 </label>
 
 </fieldset>
 
-<button type="button" class="waitlist-submit" disabled>
+<button type="submit" class="waitlist-submit">
 Join the Waitlist
 </button>
 
 <p class="waitlist-note">
-Waitlist sign-up coming soon.
+We'll only use your email for NavMate updates and early access opportunities. No spam.
 </p>
+
+</form>
 
 </div>
 
