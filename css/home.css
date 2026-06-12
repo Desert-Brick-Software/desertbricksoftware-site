@@ -202,3 +202,28 @@ border-top:2px solid #c65a24;
 font-size:14px;
 color:#aaaaaa;
 }
+
+@media (max-width: 768px) {
+
+  .header-inner{
+    flex-direction:column;
+    gap:20px;
+    padding:30px 20px;
+  }
+
+  .logo{
+    position:static;
+    transform:none;
+    left:auto;
+    top:auto;
+    height:140px;
+  }
+
+  .brand{
+    font-size:clamp(36px, 8vw, 48px);
+    text-align:center;
+    letter-spacing:1px;
+    line-height:1.1;
+  }
+
+}
