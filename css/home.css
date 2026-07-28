@@ -55,6 +55,7 @@ url("https://www.transparenttextures.com/patterns/brick-wall.png");
 .hero h1{
 font-size:46px;
 margin-bottom:16px;
+color:#b64a18;
 }
 
 .hero p{
@@ -63,7 +64,7 @@ color:#cfcfcf;
 }
 
 .brick{
-color:#c65a24;
+color:inherit;
 }
 
 
