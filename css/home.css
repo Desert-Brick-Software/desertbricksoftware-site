@@ -106,6 +106,15 @@ border-top:2px solid #c65a24;
 border-bottom:2px solid #c65a24;
 }
 
+.accordion-content .accordion-item:last-child{
+border-bottom:none;
+}
+
+.accordion-content > .accordion{
+margin-left:-18px;
+margin-right:-18px;
+}
+
 .accordion-header{
 width:100%;
 background:none;
