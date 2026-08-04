@@ -179,6 +179,16 @@ gap:10px;
 max-width:300px;
 }
 
+.product-buttons.compact{
+max-width:none;
+padding-bottom:24px;
+}
+
+.product-buttons.compact .btn{
+align-self:flex-start;
+width:fit-content;
+}
+
 .btn{
 text-decoration:none;
 border:1px solid #555;
