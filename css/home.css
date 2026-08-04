@@ -139,6 +139,10 @@ font-size:18px;
 transition:transform .3s ease;
 }
 
+.accordion-item.category > .accordion-header > .chevron{
+color:#c65a24;
+}
+
 
 
 /* PRODUCT COLORS */

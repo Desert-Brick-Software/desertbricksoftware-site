@@ -62,3 +62,15 @@ adjustAncestors(openHeight)
 })
 
 })
+
+document.querySelectorAll(".accordion-item[data-open-default]").forEach(item => {
+
+const content = item.querySelector(":scope > .accordion-content")
+const chevron = item.querySelector(":scope > .accordion-header .chevron")
+
+if(!content || !chevron) return
+
+content.style.maxHeight = content.scrollHeight + "px"
+chevron.style.transform = "rotate(90deg)"
+
+})
